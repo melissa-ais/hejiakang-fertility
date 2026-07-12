@@ -1,3 +1,3 @@
-# 禾佳康藥局｜健康諮詢站 V1
+# 禾佳康藥局｜健康諮詢站 V2
 
-將本資料夾內所有檔案上傳到 GitHub Pages Repository 根目錄即可。
+將所有檔案與 assets 資料夾一起上傳到 GitHub Pages Repository 根目錄。

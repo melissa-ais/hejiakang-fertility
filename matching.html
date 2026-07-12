@@ -1,1 +1,24 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>健康需求媒合｜禾佳康藥局</title><link rel="stylesheet" href="assets/css/style.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html"><div class="logo">禾</div><div>禾佳康藥局<small>健康諮詢站</small></div></a><a class="navbtn" href="https://lin.ee/Olm3eqO" target="_blank">LINE</a></div></header><section class="page-hero"><div class="wrap"><div class="tag">❤️ 健康需求媒合</div><h1>今天最想改善哪一件事？</h1><p class="lead">選擇目前最困擾的方向，網站會整理可與藥師討論的內容。</p></div></section><section><div class="wrap"><div class="match-box"><div class="choice-grid" id="m"><button class="choice" data-n="睡眠">😴 睡眠</button><button class="choice" data-n="疲勞">💪 疲勞</button><button class="choice" data-n="用眼">👀 用眼</button><button class="choice" data-n="女性保養">❤️ 女性保養</button><button class="choice" data-n="腸胃">🌿 腸胃</button><button class="choice" data-n="備孕">🤰 備孕</button></div><div class="result" id="r"></div></div></div></section><script src="assets/js/main.js"></script><script>const mm={睡眠:'睡眠習慣、壓力、鎂與生活作息方向',疲勞:'B群、Q10、鐵質與作息方向',用眼:'葉黃素、Omega-3 與用眼習慣',女性保養:'女性益生菌、鐵與維生素D方向',腸胃:'飲食、益生菌與腸胃用藥注意事項',備孕:'AMH、年齡、備孕時間與營養方向'};document.querySelectorAll('#m .choice').forEach(b=>b.onclick=()=>{const n=b.dataset.n;const msg=`您好，我想了解${n}相關的健康方向，想請藥師協助整理。`;const r=document.getElementById('r');r.style.display='block';r.innerHTML=`<h3>${n}方向整理</h3><p>可與藥師討論：${mm[n]}</p><div class='cta'><button class='btn btn-soft' onclick="copyText('${msg}')">複製需求</button><button class='btn btn-line' onclick="openLine('${msg}')">帶到 LINE</button></div>`});</script></body></html>
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>健康需求媒合｜禾佳康藥局</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
+
+<header><div class="wrap nav">
+<a class="brand" href="index.html"><div class="logo">禾</div><div>禾佳康藥局<small>健康諮詢站</small></div></a>
+<nav class="navlinks">
+<a href="fertility.html">備孕營養</a>
+<a href="matching.html">健康媒合</a>
+<a href="products.html">依需求推薦</a>
+<a href="articles.html">健康專欄</a>
+<a class="navbtn" href="https://lin.ee/Olm3eqO" target="_blank">LINE</a>
+</nav></div></header>
+
+<section class="page-hero"><div class="wrap"><div class="tag">❤️ 健康需求媒合</div><h1>健康需求媒合</h1><p class="lead">未來將加入完整互動式需求整理。</p></div></section>
+<section><div class="wrap"><div class="coming"><div class="emoji">❤️</div><h2>即將推出</h2><p>目前可先透過 LINE 與藥師討論。</p><a class="btn btn-line" href="https://lin.ee/Olm3eqO" target="_blank">加入 LINE</a></div></div></section>
+
+<footer class="footer"><div class="wrap footer-grid">
+<div><h3>禾佳康藥局｜健康諮詢站</h3><p>讓健康資訊更容易理解，讓每一次選擇更有方向。</p></div>
+<div><h3>免責聲明</h3><small>本網站提供之健康資訊、自我評估工具、營養建議及保健食品相關內容，僅供一般健康教育與參考使用，不作為醫療診斷、治療、處方或療效保證之依據，亦不得取代醫師、藥師或其他醫療專業人員之個別評估與建議。若有懷孕、生育規劃、疾病、長期服藥或其他健康疑慮，請諮詢醫師、藥師或至醫療院所接受專業評估。</small></div>
+</div></footer>
+<a class="floating" href="https://lin.ee/Olm3eqO" target="_blank">LINE</a>
+
+</body></html>
