@@ -15,12 +15,12 @@
 </nav></div></header>
 
 <main id="main"><section class="page-hero"><div class="wrap"><div class="tag">🌿 備孕營養自我評估</div><h1>先整理狀況，再與藥師討論備孕營養方向。</h1><p class="lead">本工具僅供健康資訊參考，不作為醫療診斷或治療依據。</p></div></section>
-<section class="alt"><div class="wrap"><div class="app">
-<div class="app-head"><strong id="step"></strong><div class="progress"><div class="bar" id="bar"></div></div></div>
-<div class="app-body" id="quiz"></div>
-<div class="app-body result-area" id="res"><h2 id="rtype"></h2><div class="summary" id="summary"></div>
-<div class="cta" style="margin-top:18px"><button class="btn btn-soft" onclick="copySummary()">複製結果</button><button class="btn btn-line" onclick="sendLine()">送到 LINE</button></div>
-<div class="notice">本評估結果僅供一般健康資訊整理與討論參考。</div></div>
+<section class="alt"><div class="wrap"><div class="app" aria-labelledby="assessment-title">
+<div class="app-head"><div class="app-step"><strong id="step"></strong><span id="step-label"></span></div><div class="progress" role="progressbar" aria-label="評估進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" id="bar"></div></div></div>
+<div class="app-body" id="quiz" aria-live="polite"><h2 id="assessment-title">備孕營養需求整理</h2></div>
+<div class="app-body result-area" id="res" aria-live="polite"><span class="result-kicker">整理完成</span><h2 id="rtype" tabindex="-1"></h2><p id="result-intro" class="result-intro"></p><div class="result-priorities" id="priorities"></div><details class="answer-details"><summary>查看我的完整回答</summary><div class="summary" id="summary"></div></details>
+<div class="cta result-actions"><button class="btn btn-line" id="copy-line" type="button">複製結果並開啟 LINE</button><button class="btn btn-soft" id="copy-result" type="button">只複製結果</button><button class="text-button" id="restart" type="button">重新評估</button></div>
+<p class="copy-status" id="copy-status" role="status"></p><div class="notice">本工具只協助整理討論重點，不提供診斷、治療、處方或個別營養劑量。若有懷孕、持續不適、疾病或長期用藥，請優先諮詢醫師或藥師。</div></div>
 </div></div></section></main>
 
 <footer class="footer"><div class="wrap footer-grid">
@@ -30,5 +30,5 @@
 <a class="floating" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener" aria-label="加入禾佳康 LINE 官方帳號">LINE</a>
 
 <script src="assets/js/main.js" defer></script>
-<script src="assets/js/fertility.js"></script>
+<script src="assets/js/fertility.js?v=20261113"></script>
 </body></html>
