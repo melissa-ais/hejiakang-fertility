@@ -145,7 +145,6 @@ a.card:hover { transform: translateY(-4px); border-color: var(--tea); }
 .notice { margin-top: 20px; padding: 12px 15px; border-left: 3px solid var(--tea); background: rgba(255,255,255,.5); color: var(--muted); font-size: 13px; }
 
 /* 門市與藥師 */
-.todo { padding: 0 4px; border-radius: 4px; background: #fff3c4; color: #7a5b12; }
 .store-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
 .store-side { display: grid; gap: 18px; }
 .info-list { display: grid; gap: 14px; margin: 0 0 24px; }
@@ -163,20 +162,6 @@ a.card:hover { transform: translateY(-4px); border-color: var(--tea); }
 .hours-note { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
 .map-frame { overflow: hidden; aspect-ratio: 4 / 3; border: 1px solid var(--line); border-radius: var(--radius); background: var(--cream); }
 .map-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
-.transport h3 { margin-top: 0; }
-.transport .checks { margin: 0; }
-.pharmacist-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.pharmacist-head { display: flex; gap: 18px; align-items: center; margin-bottom: 18px; }
-.pharmacist-head h3 { margin: 6px 0 2px; }
-.avatar { width: 92px; height: 92px; flex: 0 0 auto; display: grid; place-items: center; overflow: hidden; border-radius: 50% 50% 44% 56%; background: var(--green-soft); color: var(--green-dark); font-family: serif; font-size: 34px; }
-.avatar.tea { background: #eee2d3; color: var(--tea-dark); }
-.avatar img { width: 100%; height: 100%; object-fit: cover; }
-.license { margin: 0; color: var(--muted); font-size: 13px; }
-.pharmacist-meta { display: grid; gap: 10px; margin: 0; }
-.pharmacist-meta > div { display: grid; grid-template-columns: 84px 1fr; gap: 10px; font-size: 15px; }
-.pharmacist-meta dt { color: var(--tea-dark); font-weight: 750; }
-.pharmacist-meta dd { margin: 0; }
-.quote { margin: 18px 0 0; padding: 14px 16px; border-radius: 14px; background: var(--cream); color: var(--green-dark); font-size: 15px; }
 .store-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
 .store-strip .card { padding: 20px 22px; }
 .store-strip strong { display: block; color: var(--green-dark); }
@@ -196,7 +181,7 @@ a.card:hover { transform: translateY(-4px); border-color: var(--tea); }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
   .event { grid-template-columns: 1fr; }
   .event-art { min-height: 190px; }
-  .store-grid, .pharmacist-grid { grid-template-columns: 1fr; }
+  .store-grid { grid-template-columns: 1fr; }
   .store-strip { grid-template-columns: 1fr; }
 }
 
@@ -222,9 +207,6 @@ a.card:hover { transform: translateY(-4px); border-color: var(--tea); }
   .footer { padding-bottom: 92px; }
   .app-head, .app-body { padding: 22px 18px; }
   .quiz-option { min-height: 50px; }
-  .info-list > div, .pharmacist-meta > div { grid-template-columns: 1fr; gap: 2px; }
-  .pharmacist-head { align-items: flex-start; }
-  .avatar { width: 72px; height: 72px; font-size: 28px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
