@@ -210,6 +210,45 @@ a.card:hover { transform: translateY(-4px); border-color: var(--tea); }
 .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .related-card h3 { font-size: 17px; line-height: 1.5; }
 
+/* 保健品評估、用藥清單 */
+.doctor-card { border-color: #ecc9c3; background: #fdf3f1; }
+.doctor-card strong { color: #8a3f35; }
+.priority-card .text-link { display: inline-block; margin-top: 6px; font-size: 14px; }
+.med-tool { display: grid; grid-template-columns: .8fr 1.2fr; gap: 22px; align-items: start; }
+.med-tool h2 { margin: 0 0 14px; color: var(--green-dark); font-family: serif; font-size: 26px; }
+.med-tool label { display: block; margin: 14px 0 6px; color: var(--green-dark); font-weight: 750; font-size: 15px; }
+.med-tool input, .med-tool select, .med-tool textarea { width: 100%; min-height: 48px; padding: 11px 14px; border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--ink); font: inherit; font-size: 16px; }
+.med-tool textarea { resize: vertical; }
+.med-tool input:focus, .med-tool select:focus, .med-tool textarea:focus { outline: 3px solid rgba(67, 91, 75, .25); border-color: var(--green); }
+.med-form-card .btn { width: 100%; margin-top: 20px; }
+.req { margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: var(--green-soft); font-size: 11px; }
+.hint { margin: 12px 0 0; color: var(--muted); font-size: 13px; }
+.med-list-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.med-list-head span { color: var(--muted); font-size: 14px; }
+.med-empty { padding: 22px; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); text-align: center; }
+.med-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; counter-reset: med; }
+.med-item { counter-increment: med; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--cream); }
+.med-remove { flex: 0 0 auto; white-space: nowrap; }
+.med-item > div { min-width: 0; overflow-wrap: anywhere; }
+.med-item strong { display: block; margin-top: 6px; color: var(--green-dark); font-size: 17px; }
+.med-item strong::before { content: counter(med) ". "; }
+.med-item p { margin: 4px 0 0; color: var(--ink); font-size: 14px; }
+.med-item p span { margin-right: 8px; color: var(--muted); }
+.med-actions { margin-top: 18px; }
+.med-clear { color: #9a5148; }
+.print-only { display: none; }
+
+@media print {
+  header, footer, .page-hero, #tips, .med-form-card, .med-actions, .notice, .copy-status, .floating, .fixed-disclaimer, .skip-link, .med-remove { display: none !important; }
+  body, .alt { background: white; }
+  section { padding: 0; }
+  .med-tool { display: block; }
+  .card { border: 0; box-shadow: none; padding: 0; }
+  .print-only { display: block; color: var(--muted); }
+  .med-item { break-inside: avoid; background: white; }
+  .med-tool textarea { border: 0; padding: 0; min-height: 0; resize: none; }
+}
+
 @media (max-width: 900px) {
   .menu-toggle { display: grid; place-items: center; }
   .menu-toggle + .navlinks { position: absolute; top: 76px; left: 20px; right: 20px; display: none; align-items: stretch; padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); box-shadow: var(--shadow); }
@@ -226,6 +265,7 @@ a.card:hover { transform: translateY(-4px); border-color: var(--tea); }
   .store-grid { grid-template-columns: 1fr; }
   .store-strip { grid-template-columns: 1fr; }
   .article-grid, .related-grid { grid-template-columns: 1fr 1fr; }
+  .med-tool { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {

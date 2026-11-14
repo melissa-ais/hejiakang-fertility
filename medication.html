@@ -1,26 +1,108 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>用藥資訊整理｜禾佳康藥局</title><link rel="stylesheet" href="assets/css/style.css?v=20261114-3"></head><body>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="禾佳康藥局用藥清單小工具：把處方藥、成藥、保健食品、中藥整理成一張清單，可傳到 LINE 或列印給醫師藥師確認。資料只存在自己的裝置。">
+  <meta name="theme-color" content="#435b4b">
+  <title>用藥資訊整理｜禾佳康藥局</title>
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261114-4">
+  <script src="./assets/js/main.js?v=20261114-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="./index.html" aria-label="禾佳康藥局健康諮詢站首頁">
+        <span class="logo" aria-hidden="true">禾</span>
+        <span>禾佳康藥局<small>健康諮詢站</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟選單">☰</button>
+      <nav class="navlinks" id="site-nav" aria-label="主要選單">
+        <a href="./index.html#needs">健康需求</a>
+        <a href="./fertility.html">備孕營養</a>
+        <a href="./articles.html">健康專欄</a>
+        <a href="./store.html">門市資訊</a>
+        <a class="navbtn" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener">加入 LINE</a>
+      </nav>
+    </div>
+  </header>
 
-<header><div class="wrap nav">
-<a class="brand" href="index.html" aria-label="禾佳康藥局健康諮詢站首頁"><span class="logo" aria-hidden="true">禾</span><span>禾佳康藥局<small>健康諮詢站</small></span></a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟選單">☰</button>
-<nav class="navlinks" id="site-nav" aria-label="主要選單">
-<a href="fertility.html">備孕營養</a>
-<a href="matching.html">健康媒合</a>
-<a href="products.html">依需求推薦</a>
-<a href="articles.html">健康專欄</a>
-<a class="navbtn" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener">加入 LINE</a>
-</nav></div></header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="tag">💊 用藥資訊整理</div>
+        <h1>把正在吃的藥，<br>整理成一張清單。</h1>
+        <p class="lead">處方藥、藥局買的藥、保健食品、中藥都可以列進來。整理好之後傳到 LINE 或印出來，看診、拿藥時給醫師或藥師看，比較容易發現重複或需要錯開的藥。</p>
+      </div>
+    </section>
 
-<section class="page-hero"><div class="wrap"><div class="tag">🩺 用藥資訊整理</div><h1>用藥資訊整理</h1><p class="lead">未來將加入一般用藥衛教與注意事項。</p></div></section>
-<section><div class="wrap"><div class="coming"><div class="emoji">🩺</div><h2>即將推出</h2><p>目前可先透過 LINE 與藥師討論。</p><a class="btn btn-line" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener">加入 LINE</a></div></div></section>
+    <section class="alt" id="list-tool">
+      <div class="wrap med-tool">
+        <div class="card med-form-card">
+          <h2>新增一項</h2>
+          <form id="med-form" novalidate>
+            <label for="med-name">名稱 <span class="req">必填</span></label>
+            <input id="med-name" name="name" type="text" autocomplete="off" placeholder="例如：藥袋上的藥名、保健食品名稱" required>
+            <label for="med-type">類型</label>
+            <select id="med-type" name="type">
+              <option value="0">醫師處方藥</option>
+              <option value="1">藥局買的藥</option>
+              <option value="2">保健食品</option>
+              <option value="3">中藥／草本</option>
+            </select>
+            <label for="med-usage">怎麼吃</label>
+            <input id="med-usage" name="usage" type="text" autocomplete="off" placeholder="例如：早晚飯後各 1 顆">
+            <label for="med-purpose">用途（知道的話）</label>
+            <input id="med-purpose" name="purpose" type="text" autocomplete="off" placeholder="例如：降血壓、胃藥">
+            <button class="btn btn-line" type="submit">加入清單</button>
+          </form>
+          <p class="hint">看不懂藥名沒關係，照著藥袋或外盒上的字填就好。</p>
+        </div>
 
-<footer class="footer"><div class="wrap footer-grid">
-<div><h3>禾佳康藥局｜健康諮詢站</h3><p>讓健康資訊更容易理解，讓每一次選擇更有方向。</p><div class="footer-links"><a href="./store.html">門市資訊</a></div></div>
-<div><h3>免責聲明</h3><small>本網站提供之健康資訊、自我評估工具、營養建議及保健食品相關內容，僅供一般健康教育與參考使用，不作為醫療診斷、治療、處方或療效保證之依據，亦不得取代醫師、藥師或其他醫療專業人員之個別評估與建議。若有懷孕、生育規劃、疾病、長期服藥或其他健康疑慮，請諮詢醫師、藥師或至醫療院所接受專業評估。</small></div>
-</div></footer>
-<a class="floating" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener" aria-label="加入禾佳康 LINE 官方帳號">LINE</a>
+        <div class="card med-list-card" id="print-area">
+          <div class="med-list-head"><h2>我的用藥清單</h2><span id="med-count"></span></div>
+          <p class="print-only">禾佳康藥局｜我的用藥清單・<span id="print-date"></span></p>
+          <p class="med-empty" id="med-empty">還沒有任何項目。從左邊開始新增第一項吧。</p>
+          <ol class="med-list" id="med-list"></ol>
+          <label for="allergy">過敏或曾有不良反應</label>
+          <textarea id="allergy" rows="2" placeholder="例如：對盤尼西林過敏；吃某種止痛藥會起疹子"></textarea>
+          <div class="cta med-actions">
+            <button class="btn btn-line" id="med-line" type="button">複製並傳到 LINE</button>
+            <button class="btn btn-soft" id="med-print" type="button">列印／存成 PDF</button>
+            <button class="text-button" id="med-copy" type="button">只複製</button>
+            <button class="text-button med-clear" id="med-clear" type="button">清除全部</button>
+          </div>
+          <p class="copy-status" id="med-status" role="status"></p>
+          <div class="notice">🔒 清單只存在你這台手機或電腦的瀏覽器裡，不會上傳到網站。換手機、清除瀏覽紀錄或使用無痕模式時，清單就不會保留。</div>
+        </div>
+      </div>
+    </section>
 
-<script src="assets/js/main.js?v=20261114-1" defer></script>
-</body></html>
+    <section id="tips">
+      <div class="wrap">
+        <div class="section-head"><div><span class="section-index">用藥小知識</span><h2>藥師常提醒的事</h2></div><a class="btn btn-soft" href="./articles.html">更多健康專欄</a></div>
+        <div class="grid">
+          <a class="card" href="./article-medication-timing.html"><div class="icon" aria-hidden="true">⏰</div><h3>看懂藥袋上的時間</h3><p>飯前、飯後、睡前、空腹分別是什麼時候？忘記吃藥怎麼辦？</p><span class="link-hint">閱讀文章 →</span></a>
+          <a class="card" href="./article-drug-drinks.html"><div class="icon" aria-hidden="true">🥛</div><h3>配藥喝什麼</h3><p>牛奶、茶、咖啡、葡萄柚汁和酒，可能影響哪些藥？</p><span class="link-hint">閱讀文章 →</span></a>
+          <a class="card" href="./article-supplement-drug.html"><div class="icon" aria-hidden="true">🧴</div><h3>保健食品和藥</h3><p>魚油、紅麴、鈣片和哪些藥一起吃要注意？</p><span class="link-hint">閱讀文章 →</span></a>
+          <div class="card"><div class="icon" aria-hidden="true">📦</div><h3>藥袋不要丟</h3><p>藥和藥袋放在一起，才知道藥名、用法和有效期限。不要把不同的藥倒進同一個瓶子。</p></div>
+          <div class="card"><div class="icon" aria-hidden="true">🙅</div><h3>不要分享藥</h3><p>症狀看起來一樣，原因不一定相同。醫師開給你的藥，不要拿給家人朋友吃。</p></div>
+          <div class="card"><div class="icon" aria-hidden="true">♻️</div><h3>過期藥怎麼辦</h3><p>過期或不再使用的藥，可以帶到門市詢問如何回收處理。</p><span class="link-hint"><a href="./store.html">門市資訊 →</a></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div><h3>禾佳康藥局｜健康諮詢站</h3><p>讓健康資訊更容易理解，讓每一次選擇更有方向。</p><p class="footer-store">📍 台中市南區建國南路一段259號<br>📞 <a href="tel:+886422603775">04-2260-3775</a></p><div class="footer-links"><a href="./fertility.html">備孕營養</a><a href="./matching.html">需求媒合</a><a href="./products.html">依需求推薦</a><a href="./articles.html">健康專欄</a><a href="./store.html">門市資訊</a></div></div>
+      <div><h3>免責聲明</h3><small>本網站提供之健康資訊、自我評估工具、營養方向及保健食品相關內容，僅供一般健康教育與參考使用，不作為個別診斷、處置、處方或療效保證之依據，亦不得取代醫師、藥師或其他醫療專業人員之個別評估與建議。若有懷孕、生育規劃、疾病、長期服藥或其他健康疑慮，請諮詢醫師、藥師或至醫療院所接受專業評估。</small></div>
+    </div>
+  </footer>
+
+  <div class="fixed-disclaimer" role="note">健康提醒：本站內容僅供一般健康資訊與自我評估參考，不作為診斷、治療、處方或療效保證。</div>
+  <a class="floating" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener" aria-label="加入禾佳康 LINE 官方帳號">LINE</a>
+  <script src="./assets/js/medication.js?v=20261114-1"></script>
+</body>
+</html>
