@@ -239,7 +239,7 @@ a.card:hover { transform: translateY(-4px); border-color: var(--tea); }
 .print-only { display: none; }
 
 @media print {
-  header, footer, .page-hero, #tips, .med-form-card, .med-actions, .notice, .copy-status, .floating, .fixed-disclaimer, .skip-link, .med-remove { display: none !important; }
+  header, footer, .page-hero, #tips, .ai-launcher, .ai-panel, .med-form-card, .med-actions, .notice, .copy-status, .floating, .fixed-disclaimer, .skip-link, .med-remove { display: none !important; }
   body, .alt { background: white; }
   section { padding: 0; }
   .med-tool { display: block; }
