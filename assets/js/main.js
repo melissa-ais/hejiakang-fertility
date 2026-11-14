@@ -16,3 +16,7 @@ if (menuButton && menu) {
     }
   });
 }
+
+// 營業時間表：標示今天
+const todayRow = document.querySelector(`.hours tr[data-day="${new Date().getDay()}"]`);
+if (todayRow) todayRow.classList.add('today');
