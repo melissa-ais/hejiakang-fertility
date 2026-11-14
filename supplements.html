@@ -1,27 +1,69 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>保健品需求評估｜禾佳康藥局</title><link rel="stylesheet" href="assets/css/style.css?v=20261114-4"></head><body>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="禾佳康藥局保健品需求評估：整理精神體力、睡眠、用眼、腸道、骨骼關節等需求與目前的保健食品，作為與藥師討論的起點。">
+  <meta name="theme-color" content="#435b4b">
+  <title>保健品需求評估｜禾佳康藥局</title>
+  <link rel="stylesheet" href="./assets/css/style.css?v=20261114-5">
+  <script src="./assets/js/main.js?v=20261114-1" defer></script>
+  <script src="./assets/js/assistant.js?v=20261114-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="./index.html" aria-label="禾佳康藥局健康諮詢站首頁">
+        <span class="logo" aria-hidden="true">禾</span>
+        <span>禾佳康藥局<small>健康諮詢站</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟選單">☰</button>
+      <nav class="navlinks" id="site-nav" aria-label="主要選單">
+        <a href="./index.html#needs">健康需求</a>
+        <a href="./fertility.html">備孕營養</a>
+        <a href="./articles.html">健康專欄</a>
+        <a href="./store.html">門市資訊</a>
+        <a class="navbtn" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener">加入 LINE</a>
+      </nav>
+    </div>
+  </header>
 
-<header><div class="wrap nav">
-<a class="brand" href="index.html" aria-label="禾佳康藥局健康諮詢站首頁"><span class="logo" aria-hidden="true">禾</span><span>禾佳康藥局<small>健康諮詢站</small></span></a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟選單">☰</button>
-<nav class="navlinks" id="site-nav" aria-label="主要選單">
-<a href="fertility.html">備孕營養</a>
-<a href="matching.html">健康媒合</a>
-<a href="products.html">依需求推薦</a>
-<a href="articles.html">健康專欄</a>
-<a class="navbtn" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener">加入 LINE</a>
-</nav></div></header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="tag">☀️ 保健品需求評估</div>
+        <h1>先想清楚需求，<br>再決定要不要補充。</h1>
+        <p class="lead">6 個簡單問題，整理你最在意的方向、飲食與目前吃的保健食品，結果可以直接帶著和藥師討論。約 2 分鐘完成，不需要填寫姓名或聯絡方式。</p>
+      </div>
+    </section>
+    <section class="alt">
+      <div class="wrap">
+        <div class="app" aria-labelledby="assessment-title">
+          <div class="app-head"><div class="app-step"><strong id="step"></strong><span id="step-label"></span></div><div class="progress" role="progressbar" aria-label="評估進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" id="bar"></div></div></div>
+          <div class="app-body" id="quiz" aria-live="polite"><h2 id="assessment-title">保健品需求整理</h2></div>
+          <div class="app-body result-area" id="res" aria-live="polite">
+            <span class="result-kicker">整理完成</span><h2 id="rtype" tabindex="-1"></h2><p id="result-intro" class="result-intro"></p>
+            <div class="result-priorities" id="priorities"></div>
+            <details class="answer-details"><summary>查看我的完整回答</summary><div class="summary" id="summary"></div></details>
+            <div class="cta result-actions"><button class="btn btn-line" id="copy-line" type="button">複製結果並開啟 LINE</button><button class="btn btn-soft" id="copy-result" type="button">只複製結果</button><button class="text-button" id="restart" type="button">重新評估</button></div>
+            <p class="copy-status" id="copy-status" role="status"></p>
+            <div class="notice">本工具只協助整理討論重點。保健食品不能取代藥物治療，也不能用來治療或預防疾病；有疾病、持續不適或長期用藥，請優先諮詢醫師或藥師。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section class="page-hero"><div class="wrap"><div class="tag">💊 保健品需求評估</div><h1>保健品需求評估</h1><p class="lead">未來將加入睡眠、疲勞、用眼與女性保養需求整理。</p></div></section>
-<section><div class="wrap"><div class="coming"><div class="emoji">💊</div><h2>即將推出</h2><p>目前可先透過 LINE 與藥師討論。</p><a class="btn btn-line" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener">加入 LINE</a></div></div></section>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div><h3>禾佳康藥局｜健康諮詢站</h3><p>讓健康資訊更容易理解，讓每一次選擇更有方向。</p><p class="footer-store">📍 台中市南區建國南路一段259號<br>📞 <a href="tel:+886422603775">04-2260-3775</a></p><div class="footer-links"><a href="./fertility.html">備孕營養</a><a href="./matching.html">需求媒合</a><a href="./products.html">依需求推薦</a><a href="./articles.html">健康專欄</a><a href="./store.html">門市資訊</a></div></div>
+      <div><h3>免責聲明</h3><small>本網站提供之健康資訊、自我評估工具、營養方向及保健食品相關內容，僅供一般健康教育與參考使用，不作為個別診斷、處置、處方或療效保證之依據，亦不得取代醫師、藥師或其他醫療專業人員之個別評估與建議。若有懷孕、生育規劃、疾病、長期服藥或其他健康疑慮，請諮詢醫師、藥師或至醫療院所接受專業評估。</small></div>
+    </div>
+  </footer>
 
-<footer class="footer"><div class="wrap footer-grid">
-<div><h3>禾佳康藥局｜健康諮詢站</h3><p>讓健康資訊更容易理解，讓每一次選擇更有方向。</p><div class="footer-links"><a href="./store.html">門市資訊</a></div></div>
-<div><h3>免責聲明</h3><small>本網站提供之健康資訊、自我評估工具、營養建議及保健食品相關內容，僅供一般健康教育與參考使用，不作為醫療診斷、治療、處方或療效保證之依據，亦不得取代醫師、藥師或其他醫療專業人員之個別評估與建議。若有懷孕、生育規劃、疾病、長期服藥或其他健康疑慮，請諮詢醫師、藥師或至醫療院所接受專業評估。</small></div>
-</div></footer>
-<a class="floating" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener" aria-label="加入禾佳康 LINE 官方帳號">LINE</a>
-
-<script src="assets/js/main.js?v=20261114-1" defer></script>
-<script src="assets/js/assistant.js?v=20261114-1" defer></script>
-</body></html>
+  <div class="fixed-disclaimer" role="note">健康提醒：本站內容僅供一般健康資訊與自我評估參考，不作為診斷、治療、處方或療效保證。</div>
+  <a class="floating" href="https://lin.ee/Olm3eqO" target="_blank" rel="noopener" aria-label="加入禾佳康 LINE 官方帳號">LINE</a>
+  <script src="./assets/js/supplements.js?v=20261114-1"></script>
+</body>
+</html>
